@@ -24,4 +24,16 @@ public class Libro {
     private float precio;
     private String TipoLubro;
     private String FamaEscritor;
+    public Libro(String nombre, String autor, Date fechaEscritura, int edicion, float precio, String tipoLubro,
+            String famaEscritor) {
+        Nombre = nombre;
+        Autor = autor;
+        FechaEscritura = fechaEscritura;
+        Edicion = edicion;
+        this.precio = precio;
+        TipoLubro = tipoLubro;
+        FamaEscritor = famaEscritor;
+    }
+    public Libro() {
+    }
 }

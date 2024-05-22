@@ -17,7 +17,7 @@ import model.Libro;
 @CrossOrigin(origins = "*")
 
 @RestController
-@RequestMapping("/milibro")
+@RequestMapping("/libros")
 public class LibroController {
 
     private libroService libroService;
@@ -30,7 +30,7 @@ public class LibroController {
         return libroService.savelibro(libro);
     }
 
-    @GetMapping("/data")
+    @GetMapping("/verlibros")
     public List<Libro> getallLibros() {
         return libroService.getlibros();
     }
